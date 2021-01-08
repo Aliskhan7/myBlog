@@ -1,6 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html,body{ 
+	background:#121212;
+}
+
+canvas{
+  display:block;
 }
 
 svg{
@@ -12,57 +20,29 @@ svg{
     transform: translate(-50%, -50%);
 }
 svg .draw{
-
-    
     stroke-width: 4px;
-    fill: transparent;
-    stroke-dasharray: 5200;
-    stroke-dashoffset: 5200;
+    fill: #121212;
+    stroke-dasharray: 6200;
+    stroke-dashoffset: 6200;
     animation: animate 6s linear;
     animation-fill-mode: both;
 }
 
+#particles-js{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
 @keyframes animate{
     to{
-        stroke-dashoffset: 3200;   
+        stroke-dashoffset: 3500;   
     }
-    100%{
-        fill: #285BD4;
+    from{
+        fill: #121212;
     }
-}
-
-
-
-
-/* =============================================================================
-   My CSS
-   ========================================================================== */
-
-/* ---- base ---- */
-
-html,body{ 
-	width:100%;
-	height:100%;
-	background:#111;
-}
-
-canvas{
-        position: absolute;
-  display:block;
-  vertical-align:bottom;
-}
-
-/* ---- particles.js container ---- */
-
-#particles-js{
-  width: 100%;
-  height: 60%;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

@@ -29,7 +29,7 @@ particlesJS('particles-js',
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#285BD4"
+          "color": "#285BD4",
         },
         "polygon": {
           "nb_sides": 5
@@ -96,13 +96,13 @@ particlesJS('particles-js',
       },
       "modes": {
         "grab": {
-          "distance": 600,
+          "distance": 500,
           "line_linked": {
-            "opacity": 0.5
+            "opacity": 1
           }
         },
         "bubble": {
-          "distance": 400,
+          "distance": 900,
           "size": 70,
           "duration": 2,
           "opacity": 8,
