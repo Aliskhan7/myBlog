@@ -4,28 +4,56 @@
     box-sizing: border-box;
 }
 html,body{ 
-	background:#121212;
+    background:#121212;
+    font-family: 'Poppins', sans-serif;
 }
+.main{
+    canvas{
+        display:block;
+      }
+      
+      svg{
+          width: 500px;
+          height: 500px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          .draw{
+              stroke-width: 4px;
+              fill: #121212;
+              stroke-dasharray: 6200;
+              stroke-dashoffset: 6200;
+              animation: animate 6s linear;
+              animation-fill-mode: both;
+          }
+      }
+      @keyframes animate{
+        to{
+            stroke-dashoffset: 3500;   
+        }
+        from{
+            fill: #121212;
+        }
+    }
 
-canvas{
-  display:block;
-}
-
-svg{
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-svg .draw{
-    stroke-width: 4px;
-    fill: #121212;
-    stroke-dasharray: 6200;
-    stroke-dashoffset: 6200;
-    animation: animate 6s linear;
-    animation-fill-mode: both;
+    &_menu{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .menu{
+            &__list{
+                list-style: none;
+               &-link{
+                text-decoration: none;
+                color: #f6f6f6;
+                font-size: 5em;
+                font-weight: 100;
+               }
+            }
+        }
+    }
 }
 
 #particles-js{
@@ -38,11 +66,4 @@ svg .draw{
     z-index: -1;
   }
 
-@keyframes animate{
-    to{
-        stroke-dashoffset: 3500;   
-    }
-    from{
-        fill: #121212;
-    }
-}
+
