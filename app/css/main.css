@@ -57,14 +57,80 @@ html, body {
       color: #f6f6f6;
       font-size: 5em;
       font-weight: 100;
-      letter-spacing: -5px;
-      opacity: .3; }
+      letter-spacing: -5px; }
       .main_menu .menu__list-link:hover {
         font-size: 5.5em;
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
         opacity: 1; }
+
+.main .menu-icon {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5); }
+
+.main .menu-icon {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer; }
+  .main .menu-icon__cheeckbox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-touch-callout: none;
+    opacity: 0; }
+  .main .menu-icon__lines {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 22px;
+    height: 10px; }
+  .main .menu-icon span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #f6f6f6;
+    border-radius: 1px;
+    -webkit-transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    -o-transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965); }
+    .main .menu-icon span:first-of-type {
+      top: 0; }
+    .main .menu-icon span:last-of-type {
+      bottom: 0; }
+  .main .menu-icon.active span:first-of-type,
+  .main .menu-icon .menu-icon__cheeckbox:checked + div span:first-of-type {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 5px; }
+  .main .menu-icon.active span:last-of-type,
+  .main .menu-icon .menu-icon__cheeckbox:checked + div span:last-of-type {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 5px; }
+  .main .menu-icon.active:hover span:first-of-type,
+  .main .menu-icon.active:hover span:last-of-type,
+  .main .menu-icon:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
+  .main .menu-icon:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
+    width: 22px; }
+  @media (min-width: 1024px) {
+    .main .menu-icon:hover span:first-of-type {
+      width: 26px; }
+    .main .menu-icon:hover span:last-of-type {
+      width: 12px; } }
 
 #particles-js {
   width: 100%;

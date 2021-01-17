@@ -15,31 +15,39 @@
     <main class="main">
         <div class="main_svg">
             <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            xml:space="preserve">
-           <style type="text/css">
-               .draw{stroke:#285BD4;stroke-width:4;}
-           </style>
-           <path class="draw" d="M276.9,265.3l35.8,58.9h96.7c-11.7,39.8-52.8,73.1-98.3,67.2c-28-2.9-56.3-20.7-70.9-48
-               c-10.6-18.9-15.5-42.7-10.8-67.6c2.2-10.4,5.2-20.2,11.7-31.5c0,0,0,0,0,0c3.1-5.2,6.6-10.4,12.7-17.2c31.9-37,96.8-39.9,131.7-2
-               l46.4-39.8c-41.6-41.9-103.1-57.6-160.3-38.8C270.5,144.4,188.2,1.8,187.2,0L0,324.2h167.4c31.5,151.1,236.4,174.7,298.5,27.8
-               c10.3-21.5,11.9-59.8,10.9-86.7L276.9,265.3L276.9,265.3z M187.2,117.8c0.4,0.8,32.6,56.5,33.2,57.5c-15.9,13.4-29.1,29.8-38.7,48.4
-               c0,0,0,0,0,0c-5.1,10.3-11.2,24.7-14.3,41.5H102L187.2,117.8z"/>
-           </svg>
+            viewBox="0 0 478.7 478.7" xml:space="preserve">
+                <style type="text/css">
+                    .draw{stroke:#285BD4;stroke-width:4;}
+                </style>
+                <path class="draw" d="M276.9,265.3l35.8,58.9h96.7c-11.7,39.8-52.8,73.1-98.3,67.2c-28-2.9-56.3-20.7-70.9-48
+                    c-10.6-18.9-15.5-42.7-10.8-67.6c2.2-10.4,5.2-20.2,11.7-31.5c0,0,0,0,0,0c3.1-5.2,6.6-10.4,12.7-17.2c31.9-37,96.8-39.9,131.7-2
+                    l46.4-39.8c-41.6-41.9-103.1-57.6-160.3-38.8C270.5,144.4,188.2,1.8,187.2,0L0,324.2h167.4c31.5,151.1,236.4,174.7,298.5,27.8
+                    c10.3-21.5,11.9-59.8,10.9-86.7L276.9,265.3L276.9,265.3z M187.2,117.8c0.4,0.8,32.6,56.5,33.2,57.5c-15.9,13.4-29.1,29.8-38.7,48.4
+                    c0,0,0,0,0,0c-5.1,10.3-11.2,24.7-14.3,41.5H102L187.2,117.8z"/>
+            </svg>
+        </div>
+        <div class="menu-icon">
+            <input class="menu-icon__cheeckbox" type="checkbox" />
+            <div class="menu-icon__lines">
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <div class="main_menu">
             <ul class="menu">
-                <li class="menu__list"><a class="menu__list-link" href="#">Обо мне</a></li>
-                <li class="menu__list"><a class="menu__list-link" href="#">Портфолио</a></li>
-                <li class="menu__list"><a class="menu__list-link" href="#">Instagram</a></li>
-                <li class="menu__list"><a class="menu__list-link" href="#">GitHub</a></li>
+                <li class="menu__list"><a data-text="Обо мне" class="menu__list-link" href="#">Обо мне</a></li>
+                <li class="menu__list"><a data-text="Портфолио" class="menu__list-link" href="#">Портфолио</a></li>
+                <li class="menu__list"><a data-text="Instagram" class="menu__list-link" href="#">Instagram</a></li>
+                <li class="menu__list"><a data-text="GitHub" class="menu__list-link" href="#">GitHub</a></li>
             </ul>
         </div>
+        <div id="particles-js"></div>
     </main>
 
 
     
       
-      <div id="particles-js"></div>
+     
       <script src="js/particles.js"></script>
       <script src="js/app.js"></script>
 </body>
